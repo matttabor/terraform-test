@@ -24,7 +24,7 @@ resource "kubernetes_deployment" "db-deployment" {
 
             spec {
                 container {
-                    image = "mongo"
+                    image = "coppertreetestregistry.azurecr.io/mongo"
                     name = "mongo"
                     port {
                         container_port = 27017
